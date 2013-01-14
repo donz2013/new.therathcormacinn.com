@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -27,52 +27,17 @@
                   
                   <a href="contact.html"><img src="images/contact.jpg" hover="images/contacthover.jpg""  class="rollover"/></a>
 				  <div id="address"><img src="images/address.jpg"/></div>
-					 </div>
+	<				 </div>
 <div id="content" style="background-image:url('images/contactbg.png')">
-	
-    <!--BEGINNING OF CONTACT FORM-->
-    <div id="textbox">
-    <form method="POST" name="contactform" action="contact-form-handler.php"> <!-- Posts the details to the php file -->
-      <p>
-      <label for='name'>Your Name:</label> <br>
-      <input type="text" name="name">
-      </p>
-      <p>
-      <label for='email'>Email Address:</label> <br>
-      <input type="text" name="email"> <br>
-      </p>
-      <p>
-      <label for='message'>Message:</label> <br>
-      <textarea name="message"></textarea>
-      </p>
-      <input type="submit" value="Submit"><br>
-      </form>
-    </div> <!--End of Contact Form-->
+	<div id="textbox">
+    <h2>Thank You For Your Email</h2>
+    <h3>We will be in touch shortly</h3>
+    
+    </div>
 </div>
 
 </div>
 
-<script language="JavaScript">
-// Code for validating the form
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name"); 
-frmvalidator.addValidation("email","req","Please provide your email"); 
-frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-</script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37490450-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </body>
 
 </html>
