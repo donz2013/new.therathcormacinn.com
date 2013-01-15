@@ -1,9 +1,8 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Untitled 1</title>
+<title>The Rathcormac Inn - Contact Us</title>
 <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
 <script type='text/javascript' src='jquery.js'></script>
 <script type='text/javascript' src='js/rollover.js'></script>
@@ -11,10 +10,13 @@
 
 <body>
 <div id="mainholder">
-<div id="sidebar"><br/><img src="images/pub_logo.png"/>
-				  <br/><img src="images/name.jpg"/><br/><br/><br/><br/>
-				 
- 		         <a href="index.html"><img src="images/home.jpg" hover="images/homehover.jpg""  class="rollover"/></a>
+  <div id="sidebar"><br/>
+    <img src="images/pub_logo.png"/> <br/>
+    <img src="images/name.jpg"/><br/>
+    <br/>
+    <br/>
+    <br/>
+     <a href="index.html"><img src="images/home.jpg" hover="images/homehover.jpg""  class="rollover"/></a>
                   
                   <a href="menu.html"><img src="images/menu.jpg" hover="images/hovermenu.jpg""  class="rollover"/></a>
                   
@@ -25,15 +27,52 @@
                   <a href="gallery.html"><img src="images/gallary.jpg" hover="images/gallaryhover.jpg""  class="rollover"/></a>
                   
                   <a href="contact.html"><img src="images/contact.jpg" hover="images/contacthover.jpg""  class="rollover"/></a>
-				  <div id="address"><img src="images/address.jpg"/></div>
-	<				 </div>
-<div id="content" style="background-image:url('images/contactbg.png')">
-	<div id="textbox"><p><p class="text">&nbsp;
-		</p></div>
-</div>
+    <div id="address"><img src="images/address.jpg"/></div>
+    < </div>
+  <div id="content" style="background-image:url('images/contactbg.png')">
+    <div id="textbox">
+     <form method="POST" name="contactform" action="contact-form-handler.php">
+     <table style="padding-left: 175px">
+    <tr>
+    <td><p>
+          <input type="text" name="name" placeholder="Your Name">
+        </p></td>
+    </tr>
+    
+    <tr>
+    <td><p>
+          <input type="text" name="email" placeholder="Email Address" >
+          <br>
+        </p></td>
+    </tr>
+    
+    <tr>
+    <td><p>
+          <label for='message'>Message:</label>
+          <br>
+          <textarea name="message"></textarea>
+        </p>
+        <input type="submit" value="Submit">
+        <br></td>
+    </tr>
+    </table>
+     
+        
+        
+        
+      </form>
+      
+      <script language="JavaScript">
+// Code for validating the form
 
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script> 
+    </div>
+  </div>
 </div>
-
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -48,5 +87,4 @@
 
 </script>
 </body>
-
 </html>
